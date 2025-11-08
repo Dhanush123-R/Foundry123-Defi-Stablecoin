@@ -25,9 +25,11 @@ jobs:
           forge --version
 
       - name: Run Forge fmt
+        working-directory: ./foundry123-defi-stablecoin
         run: |
           forge fmt --check
         id: fmt
+
 
       - name: Run Forge build
         run: |
